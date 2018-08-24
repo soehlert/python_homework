@@ -1,0 +1,5 @@
+this is a
+test text file
+for assignment six
+so i need to write
+a few lines with some words to test things out

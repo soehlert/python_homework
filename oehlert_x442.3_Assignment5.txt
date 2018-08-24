@@ -1,0 +1,47 @@
+1.
+============
+
+prices = {"strawberry": 3.50, "banana": 2.50, "peach": .75, "apple": 3.00}
+
+keys = list(prices.keys())
+keys.sort()
+for i in keys:
+    print('{}: {}'.format(i, str(prices[i])))
+
+2.
+============
+
+a = [7, 12, 9, 14, 15, 18, 12]
+b = [9, 14, 8, 3, 15, 17, 15]
+big = []
+
+i = 0
+while i < len(a):
+    big.append(max(a[i], b[i]))
+    i += 1
+
+print(big)
+
+3.
+============
+
+characters = 0
+with open('A5.txt', 'r') as f:
+    for line in f:
+        while characters < 1000:
+            characters += len(line)
+
+print(characters)
+
+4.
+============
+
+characters = 0
+
+with open('A5.txt', 'r') as f:
+    for line in f:
+        if not line.strip().startswith('#'):
+            while characters < 1000:
+                characters += len(line)
+
+print(characters)
